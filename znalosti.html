@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Znalosti | Veronika</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .skill-category h3 {
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-category li {
+            padding: 8px 0;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .skill-category li:last-child {
+            border-bottom: none;
+        }
+        .github-link {
+            margin-left: 8px;
+            text-decoration: none;
+            color: #333;
+        }
+        .github-link::after {
+            font-family: 'Font Awesome 6 Brands';
+            font-weight: 400;
+            content: "\f09b";
+            margin-left: 4px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -15,29 +46,63 @@
         <ul class="nav-links">
             <li><a href="index.html">Domov</a></li>
             <li><a href="omne.html">O mne</a></li>
-            <li><a href="skusenosti.html">Skúsenosti</a></li>
             <li><a href="znalosti.html" class="active">Znalosti</a></li>
+            <li><a href="skusenosti.html">Skúsenosti</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
-    <main class="container">
-        <h1>Sekcia sa pripravuje</h1>
-        <div class="card">
+
+    <main class="container narrow-container">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1>Moje <span>znalosti</span></h1>
+            <p>Technické zručnosti a nástroje, s ktorými pracujem.</p>
+        </header>
+
+        <div class="card skill-category">
             <h3>Programovanie & IT</h3>
-            <p>Python, C, HTML, CSS - Základy</p>
-            <p>Linux (Bash, Ubuntu/WSL)</p>
-            <p>GitLab</p>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+               <li>HTML5, CSS3 <a href="https://github.com/Verocknika/verocknika.github.io" target="_blank" class="github-link"></a>
+                 <a href="https://verocknika.github.io/" 
+                   style="color: orange; text-decoration: none; font-weight: bold; margin-left: 15px;">
+                   https://verocknika.github.io
+                 </a>
+</li>
+                <li>Linux (Bash, Ubuntu/WSL)</li>
+                <li>GitHub<a href="https://github.com/Verocknika" target="_blank" class="github-link"></a></li>
+            </ul>
         </div>
-        <div class="card">
+
+        <div class="card skill-category">
             <h3>Databázy & Analýza</h3>
-            <p>Microsoft SQL Server - Základy</p>
-            <p>Sparx Enterprise Architect - Mierne pokročilý</p>
+            <ul>
+                <li>Microsoft SQL Server <a href="https://github.com/Verocknika/Database-Restaurant-Menu" target="_blank" class="github-link"></a></li>
+                <li>Sparx Enterprise Architect <a href="https://github.com/Verocknika/IS-Bike-Rental-SPARX" target="_blank" class="github-link"></a></li>
+            </ul>
         </div>
-        <div class="card">
+
+        <div class="card skill-category">
             <h3>Grafika</h3>
-            <p>Blender - Pokročilý</p>
+            <ul>
+                <li>Blender 3D modeling<a href="https://github.com/Verocknika/Blender-Night-Landscape" target="_blank" class="github-link"></a></li>
+                <li>Canva </li>
+
+            </ul>
+        </div>
+
+        <div class="card skill-category">
+            <h3>Administrativa & Kancelárske nástroje</h3>
+            <ul>
+                
+                <li>Microsoft Word<a href="https://github.com/Verocknika/ArchitekturaPC-KremikovyCip/blob/main/Veronika_Michalkova_AE_projekt.pdf" target="_blank" class="github-link"></a></li>
+                <li>Microsoft PowerPoint<a href="https://github.com/Verocknika/powerpoint/blob/main/michalkova.pdf" target="_blank" class="github-link"></a></li>
+                <li>Microsoft Excel</li>
+                <li>Outlook</li>
+            </ul>
         </div>
     </main>
+
     <script>
         document.getElementById('mobile-menu').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
