@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Znalosti | Veronika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-link"><span class="emoji">🦊</span><span class="name">Veronika</span></a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="omne.html">O mne</a></li>
+            <li><a href="skusenosti.html">Skúsenosti</a></li>
+            <li><a href="znalosti.html" class="active">Znalosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Sekcia sa pripravuje</h1>
+        <div class="card">
+            <h3>Programovanie & IT</h3>
+            <p>Python, C, HTML, CSS - Základy</p>
+            <p>Linux (Bash, Ubuntu/WSL)</p>
+            <p>GitLab</p>
+        </div>
+        <div class="card">
+            <h3>Databázy & Analýza</h3>
+            <p>Microsoft SQL Server - Základy</p>
+            <p>Sparx Enterprise Architect - Mierne pokročilý</p>
+        </div>
+        <div class="card">
+            <h3>Grafika</h3>
+            <p>Blender - Pokročilý</p>
+        </div>
+    </main>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
