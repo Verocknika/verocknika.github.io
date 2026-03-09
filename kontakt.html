@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Veronika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo-link"><span class="emoji">🦊</span><span class="name">Veronika</span></a>
+        <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="omne.html">O mne</a></li>
+            <li><a href="skusenosti.html">Skúsenosti</a></li>
+            <li><a href="znalosti.html">Znalosti</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h1>Napíšte mi <span>správu</span></h1>
+            <p>Máte otázku? Vyplňte formulár a ja sa vám ozvem späť.</p>
+        </div>
+
+        <div class="card">
+            <form action="https://formspree.io/f/xeereklv" method="POST" enctype="multipart/form-data" class="modern-form">
+                <div class="form-group">
+                    <label>Váš e-mail</label>
+                    <input type="email" name="email" placeholder="vas@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Priložiť súbor (zadanie, podklady...)</label>
+                    <input type="file" name="upload" class="file-input">
+                </div>
+                <div class="form-group">
+                    <label>Správa</label>
+                    <textarea name="message" rows="6" placeholder="Čo máte na mysli?" required></textarea>
+                </div>
+                <button type="submit" class="btn primary" style="width: 100%;">Odoslať správu</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+    </script>
+</body>
+</html>
