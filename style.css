@@ -50,6 +50,25 @@ html { overflow-y: scroll; }
 .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; }
 .hero-content h1 span { color: #e67e22; }
 .hero-btns { display: flex; gap: 15px; margin-top: 25px; }
+    /*Tablet view Portrait */
+    @media (max-width: 900px) {
+        .hero-container {
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+        }
+    }
+    /*Tablet view Portrait */
+    @media (max-width: 900px) {
+        .hero-btns {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+    }
+
 
 /* Tlačidlá */
 .btn { padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; cursor: pointer; border: none; font-size: 1rem; }
