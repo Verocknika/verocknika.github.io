@@ -49,44 +49,10 @@ html { overflow-y: scroll; }
 .profile-circle img { width: 100%; height: 100%; object-fit: cover; }
 .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; }
 .hero-content h1 span { color: #e67e22; }
-<<<<<<< HEAD
 .hero-btns { display: inline-flex; gap: 15px; margin-top: 25px; }
-=======
-.hero-btns { display: flex; gap: 15px; margin-top: 25px; }
-    /*Tablet view container Button */
-    @media (max-width: 900px) {
-        .hero-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 30px;
-        }
-    }
-    /*Tablet view Buttons in container */
-    @media (max-width: 900px) {
-        .hero-btns {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 30px;
-        }
-    }
->>>>>>> 6930812c88e4df68a299b6d498509989d355bbc5
 
-/* Buttons type .btn  (class) */
-.btn { padding: 14px 28px; 
-        border-radius: 12px; 
-        text-decoration: none; 
-        font-weight: bold; 
-        transition: 0.3s; 
-        display: inline-flex; 
-        cursor: pointer; 
-        border: none; 
-        font-size: 1rem;
-
-        width: 200px; 
-        height: 50px;
- }
+/* Tlačidlá */
+.btn { padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; cursor: pointer; border: none; font-size: 1rem; }
 .primary { background: #e67e22; color: white; }
 .primary:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3); }
 .secondary { border: 2px solid #e67e22; color: #e67e22; background: transparent; }
