@@ -18,8 +18,9 @@
 
 /* --- 1. BOX: Obrázok (Adaptívna šírka pre tablety) --- */
 .exp-img-box {
-    flex: 0 0 25%;    /* Obrázok zaberá fixných 25% šírky riadku */
-    min-width: 200px; /* Minimálna šírka, aby fotka zostala čitateľná */
+    flex: 0 0 25%;  
+    max-width: 300px;;  /* Obrázok zaberá fixných 25% šírky riadku */
+    min-width: 300px; /* Minimálna šírka, aby fotka zostala čitateľná */
     height: 300px;    
     border-radius: 15px;
     overflow: hidden;
