@@ -12,21 +12,22 @@
 .exp-row {
     display: flex;
     align-items: stretch; 
-    gap: 3%; /* Pružná medzera medzi boxmi */
+    gap: clamp(14px, 2vw, 24px);
     width: 100%;
 }
 
-/* --- 1. BOX: Obrázok (Adaptívna šírka pre tablety) --- */
+/* --- 1. BOX: Obrázok --- */
 .exp-img-box {
-    flex: 0 0 25%;  
-    max-width: 300px;;  /* Obrázok zaberá fixných 25% šírky riadku */
-    min-width: 300px; /* Minimálna šírka, aby fotka zostala čitateľná */
-    height: 300px;    
+    flex: 0 0 clamp(220px, 28%, 300px);
+    max-width: 300px;
+    min-width: 220px;
+    height: auto;            /* namiesto fix 300px */
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     position: relative;
+    align-self: stretch;     /* dorovná výšku podľa riadku */
 }
 
 .exp-img-box img {
@@ -35,11 +36,12 @@
     object-fit: cover;
 }
 
-/* --- 2. BOX: Dlhý popis (Vyplní zvyšok miesta) --- */
+/* --- 2. BOX: Dlhý popis --- */
 .exp-info-box {
-    flex: 1; 
+    flex: 1;
+    min-width: 0;            /* dôležité proti pretekaniu vo flexe */
     background: white;
-    padding: 25px;    /* Mierne zmenšený padding pre viac miesta na text */
+    padding: clamp(18px, 2vw, 25px);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     display: flex;
@@ -54,7 +56,6 @@
     border-left: 5px solid #e67e22;
 }
 
-/* Štýlovanie textu */
 .exp-info-box h3 {
     font-size: clamp(1.2rem, 2vw, 1.6rem); /* Responzívna veľkosť nadpisu */
     color: #333;
@@ -71,21 +72,51 @@
 
 .exp-info-box p {
     color: #555;
-    font-size: clamp(0.9rem, 1.1vw, 1rem); /* Text sa mierne zmenší na menších displejoch */
-    line-height: 1.6;
+    font-size: clamp(0.9rem, 1.05vw, 1rem);
+    line-height: 1.55;
+    overflow-wrap: anywhere;
 }
 
-/* --- RESPONZIVITA PRE MOBILY (Pod 768px) --- */
+/* --- TABLET: stále vedľa seba, len jemné doladenie --- */
+@media (max-width: 1024px) {
+    .exp-row {
+        flex-direction: row;   /* explicitne ostáva vedľa seba */
+        gap: 16px;
+    }
+
+    .exp-img-box {
+        flex: 0 0 clamp(200px, 32%, 260px);
+        min-width: 200px;
+        max-width: 260px;
+    }
+
+    .exp-info-box {
+        padding: 18px;
+    }
+
+    .exp-info-box h3 {
+        font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+    }
+
+    .exp-info-box p {
+        font-size: 0.94rem;
+        line-height: 1.5;
+    }
+}
+
+/* --- MOBIL: pod seba --- */
 @media (max-width: 768px) {
     .exp-row {
-        flex-direction: column; /* Na mobile idú boxy pod seba pre maximálne pohodlie */
+        flex-direction: column;
         gap: 15px;
     }
 
     .exp-img-box {
         flex: 0 0 auto;
-        width: 100%;    
-        height: 250px;  
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 250px;
     }
 
     .exp-info-box {

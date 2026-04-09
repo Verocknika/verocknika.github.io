@@ -215,6 +215,11 @@ footer {
     width: 110px;
 }
 
+.footer-socials-list a:hover,
+.footer-socials-list a:focus-visible {
+    color: #e67e22;
+}
+
 .footer-socials-list i {
     color: #e67e22;
     font-size: 1.1rem;
