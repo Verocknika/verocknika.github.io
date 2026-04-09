@@ -1,4 +1,9 @@
 /* 1. ZÁKLADNÉ NASTAVENIA */
+:root {
+    --content-max-width: 1200px;
+    --narrow-content-max-width: 920px;
+}
+
 * { 
     margin: 0; 
     padding: 0; 
@@ -27,16 +32,16 @@ main {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
     padding: 40px 20px;
     width: 90%;
 }
 
 .narrow-container {
-    max-width: 900px;
+    max-width: var(--narrow-content-max-width);
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 36px 20px;
     width: 90%;
 }
 
@@ -54,9 +59,9 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 20px;
     height: 70px;
 }
 
@@ -177,7 +182,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    max-width: 1100px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
     padding: 0 20px;
 }
