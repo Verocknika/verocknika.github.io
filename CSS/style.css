@@ -61,8 +61,10 @@ main {
 
 /* 3. NAVIGÁCIA */
 .navbar {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.86);
+    border-bottom: 1px solid rgba(230, 126, 34, 0.14);
+    box-shadow: 0 12px 28px rgba(54, 40, 27, 0.06);
+    backdrop-filter: blur(14px);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -125,27 +127,33 @@ main {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 4px;
+    border: 1px solid rgba(230, 126, 34, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .nav-links a {
     text-decoration: none;
     color: #555;
-    font-weight: 500;
-    transition: 0.3s ease;
-    padding: 10px 15px;
+    font-weight: 600;
+    transition: color 0.25s ease, background 0.25s ease;
+    padding: 8px 14px;
     display: block;
     white-space: nowrap;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    border-radius: 999px;
 }
 
 .nav-links a:hover { 
-    color: #e67e22; 
+    color: #e67e22;
+    background: rgba(230, 126, 34, 0.08);
 }
 
 .nav-links a.active { 
-    color: #e67e22; 
-    border-bottom: 2px solid #e67e22; 
+    color: #c96516;
+    border-bottom: 0;
+    background: rgba(230, 126, 34, 0.12);
 }
 
 /* 4. KARTY A TLAČIDLÁ */
@@ -274,9 +282,11 @@ footer {
         top: 70px;
         left: 0;
         width: 100%; 
-        background: white; 
+        background: rgba(255, 255, 255, 0.96);
         padding: 10px 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        border: 1px solid rgba(230, 126, 34, 0.14);
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 14px 30px rgba(54, 40, 27, 0.08);
         z-index: 1001;
     }
 
@@ -293,8 +303,8 @@ footer {
     }
 
     .nav-links a.active {
-        border-bottom: 1px solid #e67e22;
-        background: rgba(230, 126, 34, 0.03);
+        border-bottom: 1px solid rgba(230, 126, 34, 0.2);
+        background: rgba(230, 126, 34, 0.08);
     }
 
     .footer-container {
