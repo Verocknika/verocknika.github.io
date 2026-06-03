@@ -4,6 +4,7 @@
     <link rel="icon" type="image/png" href="../favicon/foxina.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pracovné, technické a študijné skúsenosti Veroniky v oblasti IT, testovania, podpory a riešenia problémov.">
     <title>Skúsenosti | Veronika</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
@@ -16,8 +17,8 @@
                 <img src="../favicon/foxina.png" alt="Veronika" class="navbar-logo">
                 <span class="name">Veronika</span>
             </a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-            <ul class="nav-links">
+            <button class="menu-toggle" type="button" aria-label="Otvoriť navigačné menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="../index.html">Domov</a></li>
                 <li><a href="omne.html">O mne</a></li>            
                 <li><a href="skusenosti.html" class="active">Skúsenosti</a></li>
@@ -27,9 +28,9 @@
         </div>
     </nav>
     <main class="container">
-        <section style="text-align: center; margin-bottom: 50px;">
+        <section class="page-intro page-intro-large">
             <h1>Pracovná cesta</h1>
-            <p style="max-width: 800px; margin: 0 auto;">Moje doterajšie skúsenosti nie sú len o pozíciách. Sú o ľuďoch, technológiách a hľadaní riešení.</p>
+            <p class="intro-text">Moje doterajšie skúsenosti nie sú len o pozíciách. Sú o ľuďoch, technológiách a hľadaní riešení.</p>
         </section>
 
         <div class="experience-list">
@@ -51,7 +52,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoF.jpg" alt="Testovanie">
+                    <img src="../PICTURES/foto2/fotoF.jpg" alt="Testovanie" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2026</span>
@@ -62,7 +63,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoE.jpg" alt="Štúdium">
+                    <img src="../PICTURES/foto2/fotoE.jpg" alt="Štúdium" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2024 - Doteraz</span>
@@ -73,7 +74,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoG.jpg" alt="Helpdesk">
+                    <img src="../PICTURES/foto2/fotoG.jpg" alt="Helpdesk" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2024 - 2025</span>
@@ -84,7 +85,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoA.jpg" alt="Oprava displeja">
+                    <img src="../PICTURES/foto2/fotoA.jpg" alt="Oprava displeja" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2024</span>
@@ -95,7 +96,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoL.jpg" alt="Zákaznícka skúsenosť">
+                    <img src="../PICTURES/foto2/fotoL.jpg" alt="Zákaznícka skúsenosť" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2024</span>
@@ -106,7 +107,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoD.jpg" alt="Zisťovanie potrieb">
+                    <img src="../PICTURES/foto2/fotoD.jpg" alt="Zisťovanie potrieb" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2019 - 2025</span>
@@ -117,7 +118,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoJ.jpg" alt="Oprava auta">
+                    <img src="../PICTURES/foto2/fotoJ.jpg" alt="Oprava auta" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2015 - 2019</span>
@@ -128,7 +129,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoB.jpg" alt="Oprava notebooku">
+                    <img src="../PICTURES/foto2/fotoB.jpg" alt="Oprava notebooku" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2012</span>
@@ -139,7 +140,7 @@
 
             <div class="exp-row">
                 <div class="exp-img-box">
-                    <img src="../PICTURES/foto2/fotoI.jpg" alt="Detailing">
+                    <img src="../PICTURES/foto2/fotoI.jpg" alt="Detailing" loading="lazy" decoding="async">
                 </div>
                 <div class="exp-info-box">
                     <span class="date">2006 - 2010</span>

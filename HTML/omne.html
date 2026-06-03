@@ -4,6 +4,7 @@
     <link rel="icon" type="image/png" href="../favicon/foxina.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobný profil Veroniky, hodnoty, záujmy a skúsenosti získané cez hory, cestovanie a praktické výzvy.">
     <title>O mne | Veronika</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
@@ -16,8 +17,8 @@
                 <img src="../favicon/foxina.png" alt="Veronika" class="navbar-logo">
                 <span class="name">Veronika</span>
             </a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-            <ul class="nav-links">
+            <button class="menu-toggle" type="button" aria-label="Otvoriť navigačné menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="../index.html">Domov</a></li>
                 <li><a href="omne.html" class="active">O mne</a></li>
                 <li><a href="skusenosti.html">Skúsenosti</a></li>
@@ -27,26 +28,26 @@
         </div>
     </nav>
     <main class="container">
-        <section style="text-align: center; margin-bottom: 50px;">
+        <section class="page-intro page-intro-large">
             <h1>Viac než len životopis</h1>
-            <p style="max-width: 800px; margin: 0 auto;">Prejdite myšou nad fotky a zistite, čo ma hory a život naučili.</p>
+            <p class="intro-text">Prejdite myšou nad fotky a zistite, čo ma hory a život naučili.</p>
         </section>
         <div class="hobby-grid">
-            <div class="hobby-card"><img src="../PICTURES/foto/foto1.jpg"><span>Nebojácnosť: Schopnosť prijať výzvu a učiť sa nové veci v cudzom jazyku a neznámom prostredí</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto4.jpg"><span>Disciplína: Udržať rovnováhu a priamy smer vyžaduje viac než silu – je to o technike, trpezlivosti a neustálom sústredení na cieľ</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto2.jpg"><span>Zodpovednosť: Rešpekt k pravidlám a precíznosť, kde každý krok a každé zaistenie musí byť stopercentné</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto6.jpg"><span>Estetika: Zmysel pre detail a krásu, zachytený cez hľadáčik objektívu</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto7.jpg"><span>Adaptabilita v každom teréne: Zimné hory sú nevyspytateľné. Naučili ma bleskovo reagovať na zmeny podmienok...</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto8.jpg"><span>Kreatívne myslenie a vizualizácia</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto10.jpg"><span>Zmena paradigmy: Odvaha prehodnotiť naučené (lyže) a prijať úplne nový prístup</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto11.jpg"><span>Analytické myslenie a logika</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto12.jpg"><span>Pokoj a schopnosť sebareflexie</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto13.jpg"><span>Zvedavosť a objavovanie</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto14.jpg"><span>Sila prírody: Nórsko ma naučilo, že tie najkrajšie výhľady si vyžadujú najťažšie výstupy</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto15.jpg"><span>Vytrvalosť: 10 rokov ladenia receptu, kým bolo cesto dokonalé</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto16.jpg"><span>Zvedavosť: Vášeň pre objavovanie nových kultúr, chutí a neznámych miest</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/foto17.jpg"><span>Samostatnosť: Cesta, ktorú som si sama naplánovala, zorganizovala, absolvovala</span></div>
-            <div class="hobby-card"><img src="../PICTURES/foto/vodoznak.jpg"><span>Rada hľadám krásu v detailoch</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto1.jpg" alt="Výzva v neznámom prostredí" loading="lazy" decoding="async"><span>Nebojácnosť: Schopnosť prijať výzvu a učiť sa nové veci v cudzom jazyku a neznámom prostredí</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto4.jpg" alt="Aktivita vyžadujúca disciplínu a sústredenie" loading="lazy" decoding="async"><span>Disciplína: Udržať rovnováhu a priamy smer vyžaduje viac než silu – je to o technike, trpezlivosti a neustálom sústredení na cieľ</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto2.jpg" alt="Horská aktivita so zodpovedným istením" loading="lazy" decoding="async"><span>Zodpovednosť: Rešpekt k pravidlám a precíznosť, kde každý krok a každé zaistenie musí byť stopercentné</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto6.jpg" alt="Fotografický detail zachytený cez objektív" loading="lazy" decoding="async"><span>Estetika: Zmysel pre detail a krásu, zachytený cez hľadáčik objektívu</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto7.jpg" alt="Zimné hory a zmenené podmienky v teréne" loading="lazy" decoding="async"><span>Adaptabilita v každom teréne: Zimné hory sú nevyspytateľné. Naučili ma bleskovo reagovať na zmeny podmienok...</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto8.jpg" alt="Kreatívna vizualizácia a práca s predstavivosťou" loading="lazy" decoding="async"><span>Kreatívne myslenie a vizualizácia</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto10.jpg" alt="Učenie sa novému prístupu na lyžiach" loading="lazy" decoding="async"><span>Zmena paradigmy: Odvaha prehodnotiť naučené (lyže) a prijať úplne nový prístup</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto11.jpg" alt="Moment spojený s logikou a analytickým myslením" loading="lazy" decoding="async"><span>Analytické myslenie a logika</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto12.jpg" alt="Pokojný moment na sebareflexiu" loading="lazy" decoding="async"><span>Pokoj a schopnosť sebareflexie</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto13.jpg" alt="Objavovanie nového miesta" loading="lazy" decoding="async"><span>Zvedavosť a objavovanie</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto14.jpg" alt="Výhľad v nórskej prírode po náročnom výstupe" loading="lazy" decoding="async"><span>Sila prírody: Nórsko ma naučilo, že tie najkrajšie výhľady si vyžadujú najťažšie výstupy</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto15.jpg" alt="Domáce pečenie ako výsledok vytrvalosti" loading="lazy" decoding="async"><span>Vytrvalosť: 10 rokov ladenia receptu, kým bolo cesto dokonalé</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto16.jpg" alt="Cestovanie a objavovanie kultúr a chutí" loading="lazy" decoding="async"><span>Zvedavosť: Vášeň pre objavovanie nových kultúr, chutí a neznámych miest</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/foto17.jpg" alt="Samostatne naplánovaná cesta" loading="lazy" decoding="async"><span>Samostatnosť: Cesta, ktorú som si sama naplánovala, zorganizovala, absolvovala</span></div>
+            <div class="hobby-card"><img src="../PICTURES/foto/vodoznak.jpg" alt="Detail prírody na vodnej hladine" loading="lazy" decoding="async"><span>Rada hľadám krásu v detailoch</span></div>
         </div>
     </main>
     <footer>

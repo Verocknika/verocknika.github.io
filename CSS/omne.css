@@ -52,6 +52,25 @@
     opacity: 1; /* Zobrazí sa pri prejdení myšou */
 }
 
+@media (hover: none) {
+    .hobby-card:hover {
+        transform: none;
+    }
+
+    .hobby-card span {
+        top: auto;
+        bottom: 0;
+        height: auto;
+        min-height: 34%;
+        align-items: flex-start;
+        opacity: 1;
+        padding: 14px;
+        font-size: 0.95rem;
+        line-height: 1.35;
+        background: rgba(230, 126, 34, 0.92);
+    }
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
     .hobby-grid {

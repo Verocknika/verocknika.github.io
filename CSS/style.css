@@ -45,6 +45,20 @@ main {
     width: 90%;
 }
 
+.page-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-intro-large {
+    margin-bottom: 50px;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* 3. NAVIGÁCIA */
 .navbar {
     background: white;
@@ -89,6 +103,9 @@ main {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    background: transparent;
+    border: 0;
+    padding: 8px;
 }
 
 .menu-toggle span {
@@ -97,6 +114,11 @@ main {
     height: 3px;
     background: #e67e22;
     border-radius: 2px;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid #e67e22;
+    outline-offset: 4px;
 }
 
 .nav-links {
