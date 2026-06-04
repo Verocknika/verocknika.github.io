@@ -1,0 +1,110 @@
+.projects-hero {
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-kicker {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #e67e22;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    max-width: var(--content-max-width);
+    margin: 0 auto 60px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: clamp(20px, 2.5vw, 28px);
+    border: 1px solid rgba(230, 126, 34, 0.14);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(54, 40, 27, 0.07);
+}
+
+.featured-project {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #fff 0%, #fff8f1 100%);
+    border-color: rgba(230, 126, 34, 0.26);
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: #c96516;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-card h2 {
+    color: #e67e22;
+    font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #555;
+    line-height: 1.58;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-tags li {
+    padding: 6px 10px;
+    border: 1px solid rgba(230, 126, 34, 0.16);
+    border-radius: 999px;
+    background: rgba(230, 126, 34, 0.07);
+    color: #5d5752;
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.project-link {
+    width: fit-content;
+    margin-top: auto;
+    color: #fff;
+    background: #e67e22;
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+    background: #c96516;
+    box-shadow: 0 8px 18px rgba(230, 126, 34, 0.2);
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project {
+        grid-column: auto;
+    }
+}
