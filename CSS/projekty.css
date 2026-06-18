@@ -66,7 +66,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 18px 0 20px;
+    margin: 18px 0 24px;
     padding: 0;
     list-style: none;
 }
@@ -81,9 +81,22 @@
     font-weight: 700;
 }
 
+.project-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 4px;
+    min-height: 52px;
+}
+
+.project-card > .project-link {
+    margin-top: auto;
+}
+
 .project-link {
     width: fit-content;
-    margin-top: auto;
     color: #fff;
     background: #e67e22;
     border-radius: 8px;
@@ -97,6 +110,12 @@
 .project-link:focus-visible {
     background: #c96516;
     box-shadow: 0 8px 18px rgba(230, 126, 34, 0.2);
+}
+
+.project-note {
+    color: #777;
+    font-size: 0.82rem;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
